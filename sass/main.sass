@@ -1,31 +1,89 @@
 body
 	margin: 0
+	font-family: Raleway
 
 .board
 	background: url('https://static.pexels.com/photos/132205/pexels-photo-132205.jpeg')
 	background-size: cover
 	width: 100%
 	height: 100%
+	top-margin: 15px
 	h1
 		text-align: center
 		color: white
-		line-height: 60px
+		line-height: 70px
+		background-color: #AC956B	
+		box-shadow: 2px 2px 4px #000000;
+		display: inline-block
+		width: 90%
 	.create-column
 		font-size: 30px
-		border-radius: 20%
-		margin: 20px
-		
+		border-radius: 5px
+		display: inline-block
+		position: relative
+		right: calc(-5% + 30px)
+		width: 60px
+		height: 60px
+		background-color: FFF7E7
 
 .column-container
 	display: flex
 
 .column
 	flex: 1
+	margin: 20px
+	background: #CDB68C
+	border-radius: 10px
+	box-shadow: 2px 2px 4px #000000;
+	min-height: 400px
+	max-height: 500px
+	overflow: auto
 	h2
 		color: white
-		text-align: center
-		line-height: 40px
-		.btn-delete
+		text-align: left
+		line-height: 30px
+		padding-left: 20px
+		display: inline-block
+		width: calc(100% - 140px)
+	.btn-delete, .add-card
+		cursor: pointer
+		border: none
+		background: #CDB68C	
+		border-radius: 5px
+		display: inline-block
+		width: 40px
+		height: 40px
+		margin: 10px
+		&:hover
+			color: white
+			background-color: black
+			transition: .5s
+	ul
+		padding: 0
+		min-height: 300px
+		li
+			list-style: none
+			background-color: FFF7E7
+			min-height: 100px
+			box-shadow: 2px 2px 4px #000000;
+			margin: 20px
+			h3
+				display: inline-block
+				padding-left: 15px
+				width: calc(100% - 40px)
+			.btn-delete-card
+				display: inline-block
+				width: 20px
+				height: 20px
+				background-color: FFF7E7
+				padding: 0
+				margin: 0 
+				border: none
+				line-height: 20px
+				text-align: center
+			p
+				margin: 20px
+				text-align: justify
 
 .card-placeholder 
 	background: red
