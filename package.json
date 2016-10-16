@@ -1,0 +1,25 @@
+{
+  "name": "zadanie_10.6",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gruntfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kasiaetryk/zadanie_10.6.git"
+  },
+  "author": "Katarzyna Etryk",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kasiaetryk/zadanie_10.6/issues"
+  },
+  "homepage": "https://github.com/kasiaetryk/zadanie_10.6#readme",
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-contrib-imagemin": "^1.0.1",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-sass": "^1.2.1"
+  }
+}
