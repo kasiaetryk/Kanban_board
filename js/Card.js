@@ -44,7 +44,9 @@ Card.prototype = {
 			url: baseUrl + '/card/' + self.id,
 			method: 'PUT',
 			data: {
-				name: newText
+				id: self.id,
+				name: newText,
+				'bootcamp_kanban_column_id': self.bootcamp_kanban_column_id
 			},
 			success: function(){
 				self.name = newText;
