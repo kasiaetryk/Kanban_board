@@ -7,9 +7,9 @@ function Card(id, name, bootcamp_kanban_column_id) {
 	this.element = createCard();
 
 	function createCard() {
-		var card = $('<li class="card"></li>');
+		var card = $('<li class="card" ></li>');
 		var cardDeleteBtn = $('<button class="btn-delete-card fa fa-times"></button>');
-		var cardDescription = $('<p class="card-description"></p>');
+		var cardDescription = $('<p class="card-description" id="' + self.id + '"></p>');
 		var modCard = $('<button class="btn-delete-card fa fa-cog"></button>')
 		cardDeleteBtn.click(function(){
 			self.removeCard();
@@ -51,7 +51,7 @@ Card.prototype = {
 			},
 			success: function(){
 				self.name = newText;
-				self.createCard();
+				document.getElementById(self.id).innerHTML = self.name;
 			}
 		});
 
