@@ -1,8 +1,9 @@
 // KLASA KANBAN CARD
-function Card(id, name) {
+function Card(id, name, bootcamp_kanban_column_id) {
 	var self = this;
 	this.id = id;
 	this.name = name || 'Nie podano nazwy';
+	this.bootcamp_kanban_column_id = bootcamp_kanban_column_id;
 	this.element = createCard();
 
 	function createCard() {
@@ -50,6 +51,7 @@ Card.prototype = {
 			},
 			success: function(){
 				self.name = newText;
+				self.createCard();
 			}
 		});
 
